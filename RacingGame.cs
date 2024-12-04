@@ -10,8 +10,6 @@ public class RacingGame : MonoBehaviour
     void Start()
     {
 
-        
-        SimulateRace();
 
     }
     void SimulateRace()
@@ -44,8 +42,12 @@ public class RacingGame : MonoBehaviour
 
         }
     }
+    void OnValidate()
+    {
+        SimulateRace();
+    }
     void Update()
     {
-
+        SimulateRace();
     }
 }
